@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-size: 62.5%;
+    color: white;
+    font-weight: 400;
+    min-height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+    display: grid;
+    place-items: center;
+}
+main {
+    display: grid;
+    max-width: 60rem;
+    margin: 50px 30px;
+    gap: 2rem;
+}
+.sm-box {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+section img {
+    width: 2.5rem;
+    border-radius: 50%;
+}
+h1 {
+    font-size: 1.1rem;
+}
+h2 {
+    font-size: 1.31rem;
+}
+span, p {
+    font-size: 0.9rem;
+    color: rgba(181, 178, 178, 0.7);
+    line-height: 1.2rem;
+}
+/*** SECTION ONE ***/
+.section-one {
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+    border-radius: 10px;
+}
+section .quotation {
+    position: absolute;
+    left: 60%;
+    top: 0;
+}
+
+/*** SECTION ONE -END- ***/
+.section-two {
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+}
+.section-three {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.section-four {
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 10px;
+}
+.section-five {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}

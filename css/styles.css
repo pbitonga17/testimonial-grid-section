@@ -11,14 +11,15 @@ body {
     min-height: 100vh;
     font-family: 'Barlow Semi Condensed', sans-serif;
 
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main {
     display: grid;
     place-content: center;
-    max-width: 70rem;
     margin: 50px 30px;
+    max-width: 67rem;
     gap: 2rem;
 }
 .sm-box {
@@ -49,6 +50,7 @@ span, p {
         grid-template-areas: 
             'daniel daniel daniel jonathan kira'
             'jeanette patrick patrick patrick kira';
+        margin: 0;
     }
     .section-one {
         grid-area: daniel;
@@ -64,6 +66,23 @@ span, p {
     }
     .section-five {
         grid-area: kira;
+    }
+    .sm-box {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 25px;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    span, p {
+        font-size: 0.8rem;
+        color: rgba(181, 178, 178, 0.7);
+        line-height: 1.2rem;
     }
 }
 /*** SECTION BOX ***/

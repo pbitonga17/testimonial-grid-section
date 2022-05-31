@@ -16,7 +16,8 @@ body {
 }
 main {
     display: grid;
-    max-width: 60rem;
+    place-content: center;
+    max-width: 70rem;
     margin: 50px 30px;
     gap: 2rem;
 }
@@ -32,7 +33,7 @@ section img {
     border-radius: 50%;
 }
 h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 h2 {
     font-size: 1.31rem;
@@ -42,9 +43,33 @@ span, p {
     color: rgba(181, 178, 178, 0.7);
     line-height: 1.2rem;
 }
-/*** SECTION ONE ***/
+@media screen and (min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-areas: 
+            'daniel daniel daniel jonathan kira'
+            'jeanette patrick patrick patrick kira';
+    }
+    .section-one {
+        grid-area: daniel;
+    }
+    .section-two {
+        grid-area: jonathan;
+    }
+    .section-three {
+        grid-area: jeanette;
+    }
+    .section-four {
+        grid-area: patrick;
+    }
+    .section-five {
+        grid-area: kira;
+    }
+}
+/*** SECTION BOX ***/
 .section-one {
-    background-color: hsl(263, 55%, 52%);
+    background: url(../images/bg-pattern-quotation.svg) no-repeat hsl(263, 55%, 52%);
+    background-position: top right 50px;
     position: relative;
     border-radius: 10px;
 }
@@ -53,8 +78,6 @@ section .quotation {
     left: 60%;
     top: 0;
 }
-
-/*** SECTION ONE -END- ***/
 .section-two {
     background-color: hsl(217, 19%, 35%);
     border-radius: 10px;
@@ -73,3 +96,4 @@ section .quotation {
     color: black;
     border-radius: 10px;
 }
+/*** SECTION BOX -END- ***/
